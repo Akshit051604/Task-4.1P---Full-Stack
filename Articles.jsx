@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider, Image, CardHeader, CardDescription, CardContent, Card, Icon, CardGroup, Container, Button } from 'semantic-ui-react';
+import { Divider, Image, CardHeader, CardDescription, CardContent, Card, Icon, Container, Button } from 'semantic-ui-react';
 import article1 from './Images/article1.jpg';
 import Article2 from './Images/article2.jpg';
 import article3 from './Images/article3.jpg';
@@ -8,7 +8,7 @@ const Articles = () => {
         <Container><Divider />
             <h2 style={{ textAlign: 'center', color: 'Grey', fontWeight: 'bold' }}> Haikyu | Karasuno High </h2>
             <Divider />
-            <CardGroup centered>
+            <Card.Group centered>
                 <Card color='green'>
                     <Image src={article1} wrapped ui={false} />
                     <CardContent>
@@ -76,7 +76,7 @@ const Articles = () => {
                         </a>
                     </CardContent>
                 </Card>
-            </CardGroup>
+            </Card.Group>
             <Button color='purple' style={{ marginTop: '20px' }}>More Players</Button>
         </Container>
     )
