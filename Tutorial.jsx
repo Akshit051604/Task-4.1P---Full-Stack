@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Image, CardHeader, CardDescription, CardContent, Card, Icon, CardGroup, Container, Button } from 'semantic-ui-react';
+import { Divider, Image, CardHeader, CardDescription, CardContent, Card, Icon, Container, Button } from 'semantic-ui-react';
 import tutorial1 from './Images/tutotial1.jpg';
 import tutorial2 from './Images/tutorial2.jpg';
 import tutorial3 from './Images/tutorial3.jpg';
@@ -9,7 +9,7 @@ const Tutorial = () => {
             <Divider />
             <h2 style={{ textAlign: 'center', color: 'Grey', fontWeight: 'bold' }}> Demon Slayer | Hashiras </h2>
             <Divider />
-            <CardGroup centered>
+            <Card.Group centered>
                 <Card color='green'>
                     <Image src={tutorial1} wrapped ui={false} />
                     <CardContent>
@@ -75,7 +75,7 @@ const Tutorial = () => {
                         </a>
                     </CardContent>
                 </Card>
-            </CardGroup>
+            </Card.Group>
             <Button color='purple' style={{ marginTop: '20px' }}>More Hashiras</Button>
         </Container>
     )
